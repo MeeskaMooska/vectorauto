@@ -115,6 +115,18 @@ header a {
     transition: 0.4s;
 }
 
+.menu-button-change #menu-button-bar-1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.menu-button-change #menu-button-bar-2 {
+    opacity: 0;
+}
+
+.menu-button-change #menu-button-bar-3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
 @media screen and (max-width: 700px) {
     .header-link {
         float: none;
@@ -140,7 +152,7 @@ header a {
         0% {
             width: 0%;
         }
-    
+
         100% {
             width: calc(100% - 16px);
         }

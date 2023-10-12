@@ -1,9 +1,23 @@
-function toggleDisplayHeaderLinks() {
-    var headerLinkContainer = document.getElementById('header-link-container');
+var menuActive = false;
+const menu = document.getElementById('header-link-container');
 
-    if (headerLinkContainer.style.display === 'none') {
-        headerLinkContainer.style.display = 'block';
+function handleMenuButtonPress(menuButton) {
+    menuButton.classList.toggle('menu-button-change');
+    if (menuActive) {
+        menu.style.display = 'none';
+        menuActive = false;
     } else {
-        headerLinkContainer.style.display = 'none';
+        menu.style.display = 'block';
+        menuActive = true;
     }
-}
+
+};
+
+onresize = function() {
+    console.log("here");
+    if (window.innerWidth > 700) {
+        document.getElementById("header-link-container").classList.toggle('menu-button-change');
+        menuActive = false;
+        menu.style.display = 'block';
+    }
+};
