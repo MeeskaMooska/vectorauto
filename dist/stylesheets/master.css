@@ -41,23 +41,23 @@ header a {
     font-size: 26px;
 }
 
-#header-title-container:hover #underline-div {
+#header-title-container:hover .underline-div {
     left: 0px;
     width: 100%;
 }
 
-#underline-div {
+.underline-div {
     width: calc(100% - 16px);
     height: 2px;
     background-color: red;
     position: absolute;
     left: 8px;
     bottom: 10px;
-    animation: 1s ease-in 1 underlineAnimation;
+    animation: 1s ease-in 1 titleUnderlineAnimation;
     transition: 1s;
 }
 
-@keyframes underlineAnimation {
+@keyframes titleUnderlineAnimation {
     0% {
         width: 0%;
     }
@@ -72,8 +72,32 @@ header a {
     transition: 1s;
 }
 
-.header-link {
+.underline-container-div {
     margin-right: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.underline-link-div {
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    width: 0px;
+    left: 50%;
+    bottom: 10px;
+    transition: .5s;
+}
+
+.active-underline-link-div {
+    width: calc(100% - 16px);
+    left: 8px;
+    animation: 1s ease-in 1 linkUnderlineAnimation;
+}
+
+
+.underline-container-div:hover .underline-link-div {
+    left: 8px;
+    width: calc(100% - 16px);
 }
 
 #header-menu-button-container {
@@ -98,6 +122,9 @@ header a {
         text-align: left;
     }
 
+    .underline-container-div {
+        width: 100%;
+    }
 
     #header-link-container {
         float: none;
@@ -107,5 +134,15 @@ header a {
     #header-menu-button-container {
         display: block;
         float: right;
+    }
+
+    @keyframes linkUnderlineAnimation {
+        0% {
+            width: 0%;
+        }
+    
+        100% {
+            width: calc(100% - 16px);
+        }
     }
 }
