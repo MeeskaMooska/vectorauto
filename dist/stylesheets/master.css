@@ -28,6 +28,7 @@ header a {
 #header-title-container {
     display: inline-block;
     position: relative;
+    margin-left: 40px;
 }
 
 #header-title {
@@ -72,7 +73,7 @@ header a {
     transition: 1s;
 }
 
-.underline-container-div {
+.underline-link-container-div {
     margin-right: 40px;
     position: relative;
     display: inline-block;
@@ -95,7 +96,7 @@ header a {
 }
 
 
-.underline-container-div:hover .underline-link-div {
+.underline-link-container-div:hover .underline-link-div {
     left: 8px;
     width: calc(100% - 16px);
 }
@@ -127,14 +128,14 @@ header a {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
     .header-link {
         float: none;
         display: block;
         text-align: left;
     }
 
-    .underline-container-div {
+    .underline-link-container-div {
         width: 100%;
     }
 
@@ -157,4 +158,111 @@ header a {
             width: calc(100% - 16px);
         }
     }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #323232;
+    background-image: radial-gradient(#454545 1px, transparent 0);
+    background-size: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(241, 241, 241);;
+    text-decoration-color: red;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-nav a {
+    color: rgb(241, 241, 241);;
+    text-decoration-color: red;
+}
+
+/* Content Styling */
+
+.underline-container-div {
+    position: relative;
+    display: inline-block;
+}
+
+.heading-underline-div {
+    width: calc(100% + 16px);
+    height: 2px;
+    background-color: red;
+    left: -8px;
+    position: absolute;
+    bottom: 10px;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: red 2px solid;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    padding: 15px 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    transition: .5s;
+}
+
+input[type=submit]:hover {
+    background: red;
+    color: white;
+}
+
+label {
+    color: grey;
+}
+
+legend {
+    color: grey;
+}
+
+.input-label {
+    cursor: text;
+    left: 5px;
+    top: 28px;
+    position: relative;
+    z-index: 100;
+    transition: .5s;
+    color: gray;
+}
+
+.input-label-active {
+    font-size: 12px;
+    top: 0px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 2px solid red;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+select {
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: red 2px solid;
+    font-size: 16px;
 }

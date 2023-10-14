@@ -1,39 +1,145 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Full service mobile auto glass replacement and repair, Fully licensed and insured, we have been providing excellent service and competitive prices for over 25 years">
+    <meta name="keywords"
+        content="vector autoglass, glass repair, auto glass, windshield repair, window replacement, Warrenton Virginia">
+    <meta name="author" content="Tayven Stover - http://www.tayven-stover.com">
     <link rel="stylesheet" href="stylesheets/master.css">
     <link rel="stylesheet" href="stylesheets/contact.css">
     <title>Vector Auto Glass</title>
 </head>
+
 <body>
-    <header>
-        <div id="header-title-container">
-            <a href="index.html" id="header-title">Vector Auto Glass</a>
-            <div class="underline-div"></div>
-        </div>
-        <div id="header-menu-button-container" onclick="handleMenuButtonPress(this)">
-            <div id="menu-button-bar-1"></div>
-            <div id="menu-button-bar-2"></div>
-            <div id="menu-button-bar-3"></div>
-        </div>
-        <div id="header-link-container">
-            <div class="underline-container-div">
-                <a class="header-link" href="index.html">Home</a>
-                <div class="underline-link-div"></div>
+    <div class="box">
+        <header>
+            <div id="header-title-container">
+                <a href="index.html" id="header-title">Vector Auto Glass</a>
+                <div class="underline-div"></div>
             </div>
-            <div class="underline-container-div">
-                <a class="header-link" href="contact.html">Contact</a>
-                <div class="underline-link-div active-underline-link-div"></div>
+            <div id="header-menu-button-container" onclick="handleMenuButtonPress(this)">
+                <div id="menu-button-bar-1"></div>
+                <div id="menu-button-bar-2"></div>
+                <div id="menu-button-bar-3"></div>
             </div>
-            <div class="underline-container-div">
-                <a class="header-link" href="services.html">Services</a>
-                <div class="underline-link-div"></div>
-            </div>        
+            <div id="header-link-container">
+                <div class="underline-link-container-div">
+                    <a class="header-link" href="index.html">Home</a>
+                    <div class="underline-link-div"></div>
+                </div>
+                <div class="underline-link-container-div">
+                    <a class="header-link" href="contact.html">Contact</a>
+                    <div class="underline-link-div active-underline-link-div"></div>
+                </div>
+                <div class="underline-link-container-div">
+                    <a class="header-link" href="services.html">Services</a>
+                    <div class="underline-link-div"></div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="slim-content-div">
+                <div class="underline-container-div">
+                    <h1 class="container-title">Get in touch.</h1>
+                    <div class="heading-underline-div"></div>
+                </div>
+                <div id="business-hours-container">
+                    <h2>Hours of business:</h2>
+                    <p>Monday - Friday, 8:00AM - 5:00PM</p>
+                    <p>Saturday, 9:00PM - 2:00PM</p>
+                </div>
+                <div id="phone-info-container">
+                    <h2>Call us at</h2>
+                    <h4>The office:</h4>
+                    <p>Office: <a href="tel:540-341-7200">(540) 341-7200</a></p>
+                    <h4>Or on the go:</h4>
+                    <p>Cell: <a href="tel:703-298-7908">(703) 298-7908</a></p>
+                </div>
+                <div id="email-info-container">
+                    <h2>Email us at</h2>
+                    <p><a href="mailto:vectorglass@comcast.net">vectorglass@comcast.net</a></p>
+                </div>
+            </div>
+
+            <div class="wide-content-div">
+                <div class="underline-container-div" id="wide-content-title-container">
+                    <h1 class="container-title">Or leave us a message right here.</h1>
+                    <div class="heading-underline-div"></div>
+                </div>
+                <div class="form-container-div">
+                    <form onsubmit="return formSubmittedMessage()" action="javascript:void(0);">
+                        <div class="column">
+                            <div>
+                                <label for="first-name" class="input-label">First Name:</label>
+                                <input type="text" name="first-name" id="first-name" onfocus="inputFocusHandler(this)"
+                                    onblur="inputBlurHandler(this)">
+                            </div>
+                            <div>
+                                <label for="last-name" class="input-label">Last Name:</label>
+                                <input type="text" name="last-name" id="last-name" onfocus="inputFocusHandler(this)"
+                                onblur="inputBlurHandler(this)">
+                            </div>
+                            <div>
+                                <label for="email" class="input-label">Email:</label>
+                                <input type="email" name="email" id="email" onfocus="inputFocusHandler(this)"
+                                onblur="inputBlurHandler(this)">
+                            </div>
+                            <div>
+                                <label for="phone" class="input-label">Phone:</label>
+                                <input type="tel" name="phone" id="phone" onfocus="inputFocusHandler(this)"
+                                onblur="inputBlurHandler(this)">
+                            </div>
+                            <div>
+                                <label for="preferred-date" class="input-label">Preferred date of service:</label>
+                                <input type="text" name="preferred-date" id="preferred-date" onfocus="inputFocusHandler(this)"
+                                onblur="inputBlurHandler(this)">
+                            </div>
+                        </div>
+                        <div class="divider-div"></div>
+                        <div class="column" id="column-1">
+                            <div>
+                                <label for="contact-time">When is a good time to contact you?</label>
+                                <select name="contact-time" id="contact-time">
+                                    <option value="morning">Morning</option>
+                                    <option value="afternoon">Afternoon</option>
+                                    <option value="evening">Evening</option>
+                                    <option value="Anytime">Anytime</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="desired-service" class="input-label">Desired service, for estimate.</label>
+                                <input type="text" name="desired-service" id="desired-service" onfocus="inputFocusHandler(this)"
+                                onblur="inputBlurHandler(this)">
+                            </div>
+                            <div id="message-container">
+                                <label for="message" id="message-label">Comments or Notes:</label>
+                                <textarea id="message" cols="30" rows="10" onfocus="textareaFocusHandler(this)"
+                                onblur="textareaBlurHandler(this)"></textarea>
+                            </div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+        </div>
+        <div class="footer-owner-section">
+            <p>© Vector Auto Glass 2023</p>
+            <p>Warrenton, VA</p>
+            <p>Created by <a href="http://www.tayven-stover.com">Tayven Stover</a></p>
+        </div>
+    </footer>
     <script src="scripts/engine.js"></script>
 </body>
+
 </html>

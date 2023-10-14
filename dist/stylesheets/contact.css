@@ -1,0 +1,136 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .row {
+    border: 1px dotted grey;
+}
+
+.box header {
+    flex: 0 1 auto;
+}
+
+.box .content {
+    flex: 1 1 auto;
+}
+
+.container-title {
+    font-size: 26px;
+}
+
+.slim-content-div {
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 30%;
+    background-color: #323232;
+    color: rgb(241, 241, 241);
+    font-weight: light;
+    background-image: radial-gradient(#454545 1px, transparent 0);
+    background-size: 10px 10px;
+}
+
+.slim-content-div a {
+    color: rgb(241, 241, 241);
+    text-decoration-color: red;
+}
+
+#business-hours-container {
+    margin-top: 24%;
+}
+
+#wide-content-title-container {
+    margin-left: 48px;
+}
+
+.wide-content-div {
+    float: right;
+    display: block;
+    height: 100%;
+    width: 70%;
+    margin: 0px;
+}
+
+.divider-div {
+    width: 1px;
+    height: 70%;
+    background-color: red;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+
+.form-container-div {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: calc(100% - 80px);
+    height: calc(100% - 100px);
+}
+
+form {
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    float: left;
+    width: 46%;
+    margin: 0px;
+}
+
+#column-1 {
+    margin: 0px;
+    float: right;
+}
+
+#message-container {
+    flex-direction: column;
+    display: flex;
+}
+
+#message-label {
+    margin-bottom: 10px;
+    transition: .5s;
+}
+
+@media screen and (max-width: 920px) {
+    label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    label {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .slim-content-div {
+        width: 100%;
+    }
+
+    .wide-content-div {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .divider-div {
+        display: none;
+    }
+}
