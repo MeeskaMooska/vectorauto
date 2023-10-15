@@ -118,15 +118,81 @@ form {
 }
 
 @media screen and (max-width: 770px) {
+    .box {
+        display: block;
+        flex-flow: column;
+        height: 100%;
+    }
+    
+    .box .row {
+        border: 1px dotted grey;
+    }
+    
+    .box header {
+        flex: none;
+    }
+    
+    .box .content {
+        flex: none;
+        height: 100%;
+    }
+
     .slim-content-div {
+        display: block;
+        height: 100%;
         width: 100%;
     }
 
     .wide-content-div {
+        float: none;
+        display: block;
         width: 100%;
     }
 
     .column {
+        display: block;
+        width: 100%;
+    }
+
+    .divider-div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 10px) {
+    .box {
+        display: block;
+        flex-flow: column;
+        height: 100%;
+    }
+    
+    .box .row {
+        border: 1px dotted grey;
+    }
+    
+    .box header {
+        flex: none;
+    }
+    
+    .box .content {
+        flex: none;
+        height: 80%;
+    }
+
+    .slim-content-div {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .wide-content-div {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .column {
+        display: block;
         width: 100%;
     }
 

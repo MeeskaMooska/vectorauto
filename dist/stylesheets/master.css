@@ -128,6 +128,16 @@ header a {
     transform: translate(0, -11px) rotate(45deg);
 }
 
+@media screen and (max-width: 840px) {
+    #header-title-container {
+        margin-left: 20px;
+    }
+
+    .underline-link-container-div {
+        margin-right: 20px;
+    }
+}
+
 @media screen and (max-width: 740px) {
     .header-link {
         float: none;
@@ -142,6 +152,10 @@ header a {
     #header-link-container {
         float: none;
         display: none;
+    }
+
+    #header-title-container {
+        margin-left: 0px;
     }
 
     #header-menu-button-container {
@@ -165,10 +179,10 @@ footer {
     background-color: #323232;
     background-image: radial-gradient(#454545 1px, transparent 0);
     background-size: 10px 10px;
-    display: flex;
-    flex-direction: row;
     color: rgb(241, 241, 241);;
     text-decoration-color: red;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-nav {
