@@ -1,7 +1,11 @@
 :root {
     --lightmode-link-color: black;
     --white: #ffffff;
-  }
+    --dot-grid-background-color: #323232;
+    --dot-grid-color: #f1f1f1;
+    --dot-grid-background-image: radial-gradient(#454545 1px, transparent 0);
+    --dot-grid-background-size: 10px 10px;
+}
 
 html,
 body {
@@ -206,7 +210,8 @@ header a {
     margin: 0px;
 }
 
-.footer-nav, .footer-owner-section {
+.footer-nav,
+.footer-owner-section {
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -221,6 +226,7 @@ header a {
     left: -4px;
     bottom: 13px;
     width: calc(100% + 77px);
+    animation: none;
 }
 
 .svg-car-container {

@@ -1,0 +1,88 @@
+.page-banner {
+    background-color: var(--dot-grid-background-color);
+    color: var(--dot-grid-color);
+    background-image: var(--dot-grid-background-image);
+    background-size: var(--dot-grid-background-size);
+
+    padding: 80px 10px;
+    text-align: center;
+}
+
+.page-banner h1,
+.page-banner p {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.page-banner h1 {
+    font-size: 50px;
+}
+
+.details-section {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.details-section h2 {
+    margin-top: 40px;
+}
+
+.divider-div {
+    width: 40%;
+    margin: 40px 30%;
+    height: 1px;
+    background: red;
+}
+
+.card-container-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 30%;
+}
+
+.card-icon-container {
+    font-size: 40px;
+}
+
+.card .underline-div {
+    animation: none;
+    width: calc(100% + 16px);
+    left: -8px;
+    bottom: 14px;
+}
+
+.card-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1000px) {
+    .details-section {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-container-div {
+        display: block;
+    }
+    
+    .card {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
