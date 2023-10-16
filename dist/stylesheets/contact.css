@@ -1,17 +1,15 @@
+/* Version: 1.0.0 */
+
+/* Desktop Friendly */
 html,
 body {
     height: 100%;
-    margin: 0;
 }
 
 .box {
     display: flex;
-    flex-flow: column;
-    height: 100%;
-}
-
-.box .row {
-    border: 1px dotted grey;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .box header {
@@ -19,7 +17,8 @@ body {
 }
 
 .box .content {
-    flex: 1 1 auto;
+    overflow: auto;
+    flex: 1;
 }
 
 .container-title {
@@ -118,25 +117,43 @@ form {
 }
 
 @media screen and (max-width: 770px) {
+
+    html,
+    body {
+        height: auto;
+    }
+
     .box {
         display: block;
-        flex-flow: column;
-        height: 100%;
+        height: auto;
     }
-    
+
+    .box header {
+        display: block;
+    }
+
     .box .content {
-        flex: none;
-        height: 100%;
+        overflow: visible;
+    }
+
+    footer {
+        display: block;
+        margin-bottom: 0px;
     }
 
     .slim-content-div {
         display: block;
-        height: 80%;
+        height: auto;
+        padding-bottom: 20px;
         width: 100%;
     }
 
+    #business-hours-container {
+        margin-top: 0%;
+    }
+
     .wide-content-div {
-        height: 60%;
+        height: auto;
         float: none;
         display: block;
         width: 100%;
@@ -144,7 +161,7 @@ form {
     }
 
     #wide-content-title-container {
-        margin-left: 0px;
+        align-self: center;
     }
 
     #wide-content-title-container .container-title {
@@ -156,46 +173,9 @@ form {
         width: 100%;
     }
 
-    .divider-div {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 10px) {
-    .box {
-        display: block;
-        flex-flow: column;
-        height: 100%;
-    }
-    
-    .box .row {
-        border: 1px dotted grey;
-    }
-    
-    .box header {
-        flex: none;
-    }
-    
-    .box .content {
-        flex: none;
-        height: 80%;
-    }
-
-    .slim-content-div {
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-
-    .wide-content-div {
+    #column-1 {
+        margin-bottom: 0px;
         float: none;
-        display: block;
-        width: 100%;
-    }
-
-    .column {
-        display: block;
-        width: 100%;
     }
 
     .divider-div {
