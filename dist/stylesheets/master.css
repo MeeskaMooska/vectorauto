@@ -1,3 +1,8 @@
+:root {
+    --lightmode-link-color: black;
+    --white: #ffffff;
+  }
+
 html,
 body {
     margin: 0;
@@ -139,6 +144,12 @@ header a {
     }
 }
 
+@media screen and (max-width: 760px) {
+    .footer-center-logo {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 740px) {
     .header-link {
         float: none;
@@ -178,20 +189,42 @@ header a {
 /* Footer Styling */
 .footer {
     margin: 0px;
-    background-color: #323232;
-    color: rgb(241, 241, 241);
-    background-image: radial-gradient(#454545 1px, transparent 0);
-    background-position: 0px 5px;
-    background-size: 10px 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    overflow: hidden;
 }
 
 .footer a {
-    color: rgb(241, 241, 241);
+    color: var(--lightmode-link-color);
     text-decoration-color: red;
 }
 
 .footer p {
     margin: 0px;
+}
+
+.footer-nav, .footer-owner-section {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-owner-section {
+    float: right;
+}
+
+.footer-center-logo .underline-div {
+    left: -4px;
+    bottom: 13px;
+    width: calc(100% + 77px);
+}
+
+.svg-car-container {
+    position: absolute;
 }
 
 /* Content Styling */
