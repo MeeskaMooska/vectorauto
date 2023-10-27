@@ -22,8 +22,8 @@
 .page-banner h1,
 .page-banner p {
     margin: 20px;
-  font-size: 20px;
-  z-index: 1;
+    font-size: 20px;
+    z-index: 1;
 }
 
 .page-banner h1 {
@@ -45,8 +45,48 @@
     width: 300px;
 }
 
+.services-container {
+    width: 80%;
+    margin: 50px 10%;
+}
+
+.services-div p {
+    margin: 20px 40px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.with-bullet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.with-bullet::before {
+    content: "•";
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+
 @media screen and (max-width: 800px) {
+    .page-banner {
+        background-color: var(--dot-grid-background-color);
+        background-image: var(--dot-grid-background-image);
+        background-size: var(--dot-grid-background-size);
+    }
+
+    .page-banner-overlay {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
     .pitch-container img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .services-div p {
+        margin: 20px 20px;
     }
 }

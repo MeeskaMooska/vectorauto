@@ -82,6 +82,16 @@
 }
 
 @media screen and (max-width: 800px) {
+    .page-banner {
+        background-color: var(--dot-grid-background-color);
+        background-image: var(--dot-grid-background-image);
+        background-size: var(--dot-grid-background-size);
+    }
+
+    .page-banner-overlay {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
     .card-container-div {
         display: block;
     }
