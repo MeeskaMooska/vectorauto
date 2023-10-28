@@ -15,7 +15,7 @@ function handleMenuButtonPress(menuButton) {
 
 };
 
-onresize = function() {
+onresize = function () {
     if (window.innerWidth > 700) {
         menuActive = false;
         menu.style.display = 'block';
