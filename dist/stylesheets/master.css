@@ -258,6 +258,10 @@ input {
     border: none;
     border-bottom: red 2px solid;
     font-size: 16px;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-border-radius:0px;
+    border-radius: 0px;
 }
 
 input[type=submit] {
