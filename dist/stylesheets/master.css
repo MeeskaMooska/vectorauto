@@ -309,6 +309,10 @@ textarea {
     resize: none;
     box-sizing: border-box;
     outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-border-radius:0px;
+    border-radius: 0px;
 }
 
 select {
