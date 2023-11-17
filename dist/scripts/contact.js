@@ -11,6 +11,7 @@ contactForm.addEventListener('submit', async (event) => {
     let contactTime = document.getElementById('contact-time').value;
     let desiredService = document.getElementById('desired-service').value;
     let message = document.getElementById('message').value;
+    let submit = document.getElementById('submit');
 
     const formInfo = {
         firstName,
@@ -29,6 +30,9 @@ contactForm.addEventListener('submit', async (event) => {
         }
     }
 
+    submit.disabled = true;
+    submit.value = 'Sending...';
+
     try {
         const response = await fetch('/.netlify/functions/emailContact', {
             method: 'POST',
@@ -39,8 +43,10 @@ contactForm.addEventListener('submit', async (event) => {
         });
 
         const data = await response.json();
-        console.log('Response:', data);
+        alert(data.message);
+        submit.value = 'Submit';
     } catch (error) {
-        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+        submit.value = 'Submit';
     }
 });
